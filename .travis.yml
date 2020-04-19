@@ -1,0 +1,6 @@
+language: csharp
+mono: none
+dotnet: 2.1.502
+solution: StudentLibrary.sln
+script:
+  - dotnet test StudentTest/StudentTest.csproj

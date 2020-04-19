@@ -29,7 +29,6 @@ namespace StudentAnalyzer
 			// работе с файлами и десериализации.
 			try
 			{
-				File.WriteAllText("../../../.gitignore", ",vs\nbin\nobj");
 				using (var stream =
 					new JsonTextReader(new StreamReader("../../../students.json")))
 				{
