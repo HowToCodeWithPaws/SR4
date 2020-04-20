@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 using StudentLibrary;
 using System.IO;
 using Newtonsoft.Json;
+/// Ср 4
+/// Вариант 2
+/// Зубарева Наталия 
+/// БПИ199
+/// 19-20 .04
 
 /// <summary>
 /// Консольное приложение для генерации списка студентов и его сериализации.

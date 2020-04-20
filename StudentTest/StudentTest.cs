@@ -112,16 +112,16 @@ namespace StudentTest
 		[TestMethod]
 		public void TestPlusOperator()
 		{
-			Student a = new Student("Aaaaaa", Faculty.CS, 7);
-			Student b = new Student("Bbbbbb", Faculty.CS, 8);
-			Student c = new Student("Ccccccc", Faculty.Design, 6.7);
-			Student d = new Student("Ddddddddd", Faculty.Design, 4.1);
-			Student e = new Student("Eeeeeeeeee", Faculty.Design, 9.9);
+			Student a = new Student("Aaaaaa", Faculty.CS, 7.7777777);
+			Student b = new Student("Bbbbbb", Faculty.CS, 8.88888888);
+			Student c = new Student("Ccccccc", Faculty.Design, 6.666666);
+			Student d = new Student("Ddddddddd", Faculty.Design, 4.4444);
+			Student e = new Student("Eeeeeeeeee", Faculty.Design, 9.999999999);
 
-			Student exp1 = new Student("Aaabbb", Faculty.CS, 7.5);
-			Student exp2 = new Student("Bbbaaa", Faculty.CS, 7.5);
-			Student exp3 = new Student("Dddddccc", Faculty.Design, 5.4);
-			Student exp4 = new Student("Eeeeedddd", Faculty.Design, 7);
+			Student exp1 = new Student("Aaabbb", Faculty.CS, (7.7777777+ 8.88888888)/2);
+			Student exp2 = new Student("Bbbaaa", Faculty.CS, (7.7777777 + 8.88888888) / 2);
+			Student exp3 = new Student("Dddddccc", Faculty.Design, (6.666666 + 4.4444) / 2);
+			Student exp4 = new Student("Eeeeedddd", Faculty.Design, (4.4444 + 9.999999999) / 2);
 
 			Assert.AreEqual(exp1, a + b);
 			Assert.AreEqual(exp2, b + a);
