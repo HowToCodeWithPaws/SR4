@@ -56,11 +56,18 @@ namespace StudentAnalyzer
 			}
 			catch (JsonException e)
 			{
-				Console.WriteLine(e.Message);
+				Console.WriteLine("Возникла проблема. Попробуйте заново."+e.Message);
 			}
 			catch (StudentException e)
 			{
-				Console.WriteLine(e.Message);
+				Console.WriteLine("Возникла проблема. Попробуйте заново."+ e.Message);
+			}
+			catch (NullReferenceException e) {
+				Console.WriteLine("Возникла проблема. Попробуйте заново."+e.Message);
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine("Возникла проблема. Попробуйте заново." + e.Message);
 			}
 
 			return new List<Student>();
