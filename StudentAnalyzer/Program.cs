@@ -30,7 +30,7 @@ namespace StudentAnalyzer
 			try
 			{
 				using (var stream =
-					new JsonTextReader(new StreamReader("../../../students.json")))
+					new JsonTextReader(new StreamReader("../../../../students.json")))
 				{
 					JsonSerializer serializer = new JsonSerializer();
 					students = serializer.Deserialize(stream, typeof(List<Student>))
@@ -125,6 +125,8 @@ namespace StudentAnalyzer
 		/// </summary>
 		static void Main(string[] args)
 		{
+			System.Globalization.CultureInfo.CurrentCulture
+				   = new System.Globalization.CultureInfo("en-US", false);
 			List<Student> students;
 
 			// Десериализовали, приравняли, вывели.

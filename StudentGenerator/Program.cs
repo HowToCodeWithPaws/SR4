@@ -56,7 +56,7 @@ namespace StudentGenerator
 			try
 			{
 				using (var stream =
-					new JsonTextWriter(new StreamWriter("../../../students.json")))
+					new JsonTextWriter(new StreamWriter("../../../../students.json")))
 				{
 					JsonSerializer jsonSerializer = new JsonSerializer();
 					jsonSerializer.Serialize(stream, students);
@@ -86,6 +86,9 @@ namespace StudentGenerator
 		/// </summary>
 		static void Main(string[] args)
 		{
+			System.Globalization.CultureInfo.CurrentCulture
+				   = new System.Globalization.CultureInfo("en-US", false);
+
 			// Список для студентов.
 			List<Student> students = new List<Student>();
 

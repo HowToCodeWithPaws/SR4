@@ -19,8 +19,8 @@ namespace StudentTest
 			Student a = new Student("Aaaaaaaaaa", Faculty.CS, 8.88888888);
 			Student b = new Student("Bbbbbb", Faculty.Design, 8);
 
-			string exp1 = "CS Student Aaaaaaaaaa: Mark = 8,889";
-			string exp2 = "Design Student Bbbbbb: Mark = 8,000";
+			string exp1 = "CS Student Aaaaaaaaaa: Mark = 8.889";
+			string exp2 = "Design Student Bbbbbb: Mark = 8.000";
 
 			Assert.AreEqual(exp1, a.ToString());
 			Assert.AreEqual(exp2, b.ToString());
